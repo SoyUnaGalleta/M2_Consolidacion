@@ -9,41 +9,102 @@
     
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand px-4" href="#">FM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">FM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                <a class="nav-link" href="#informacion">Información Personal</a>
-                </li>
-                <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#informacion">Información Personal</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#habilidades">Habilidades</a>
-                </li>
-                <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#proyectos">Proyectos Realizados</a>
-                </li>
-                <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
+              </li>
             </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
 
-    <div class="container p-4 my-4">
+    <div class="container p-5 my-4">
 
         <div class="categoria" id="informacion">
-            <h2>Información Personal</h2>
-            <p class="borde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis saepe numquam similique eius tenetur aperiam libero! Distinctio, asperiores sapiente fuga illum aliquid ad ullam et? Recusandae at illo placeat tempore!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet sunt voluptates porro perferendis id dolorem esse, veniam neque praesentium, quos quisquam nobis sed expedita? Fugiat libero quaerat eos blanditiis voluptatum. </p>
+            <h2 id="sinMarginTop">Información Personal</h2>
+            <div class="row borde">
+
+                <div class="col-md-2">
+                  <img src="assets/Persona.png" style="width: 100%;">
+                </div>
+
+                <div class="col-md-10">
+
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="informacion">
+                        <div class="dato"><p>Nombre</p></div>
+                        <p>Fernanda Javiera Muñoz Guglielmi</p></div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="informacion">
+                        <div class="dato"><p>Correo Electronico</p></div>
+                        <p>fernanda.jmg95@gmail.com</p></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="informacion">
+                        <div class="dato"><p>Dirección</p></div>
+                        <p>Calle Fantasía #403</p></div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="informacion">
+                        <div class="dato"><p>Celular</p></div>
+                        <p>+569 4321 8765</p></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="informacion">
+                        <div class="dato"><p>Tipo de dato</p></div>
+                        <p>Información</p></div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="informacion">
+                        <div class="dato"><p>Tipo de Dato</p></div>
+                        <p>Información</p></div>
+                    </div>
+                  </div>
+
+                </div>
+
+            </div>
+            <div class="row borde">
+              <div class="col">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque excepturi labore, deserunt dignissimos quibusdam rerum culpa sint sapiente at a. Voluptas ea praesentium laudantium cupiditate explicabo natus odit cumque excepturi! 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestias, doloremque commodi accusantium necessitatibus culpa unde temporibus numquam aut quae vero eligendi reiciendis omnis ab quis similique eos, vitae hic! 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis impedit alias quasi totam tenetur ex excepturi dicta blanditiis ipsam veritatis ratione, a dolore illo laboriosam, accusantium, consectetur libero numquam! 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi soluta eaque error tenetur officiis corporis deserunt optio tempore cum libero, voluptates dolore, iste at voluptatibus officia sapiente consequatur, obcaecati aliquam!
+                  </p>
+              </div>
+          </div>
         </div>
         
         
         <div class="categoria" id="habilidades"><h2>Habilidades</h2></div>
-        <div class="form-row d-flex flex-wrap justify-content-around">
-            <div class="col-sm-5 borde">
+        <div class="row">
+            <div class="col-sm-6 borde">
                 <ul>
                     <li>CSS</li>
                     <li>HTML</li>
@@ -56,10 +117,11 @@
                     <li>GitHub</li>
                 </ul>
             </div>
-            <div class="col-sm-5 borde">
+            <div class="col-sm-6 borde">
                 <p>¡Cambia el color!</p>
                 <button type="button" class="btn btn-outline-info buttonHab" onclick="cambiarColor()" id="color">Cambiar color</button><br>
-                <p>¡Selecciona un color y agregalo a la ruleta!</p>
+                <p>¡Selecciona un color y agregalo a la ruleta!<br>
+                (Se agrega a la siguiente vuelta)</p>
                 <input type="color" id="colorNuevo">
                 <button type="button" class="btn btn-outline-info buttonHab" onclick="agregarColor()">Agregar Color</button>
             </div>
@@ -68,9 +130,9 @@
 
         
         <div class="categoria" id="proyectos">
-            <h2>Proyectos Realizados </h2>
+        <h2>Proyectos Realizados </h2>
 
-            <div class="d-flex flex-wrap justify-content-around">
+        <div class="d-flex flex-wrap justify-content-around">
             <div class="card" style="width: 18rem;">
                 <div class="imagenes"><img src="assets/Presupuesto.png" class="card-img-top imagenesCards" alt="..."></div>
                 <div class="card-body">
@@ -124,52 +186,53 @@
                   <a href="https://soyunagalleta.github.io/practica_consolidacion_7_produccion/" class="btn btn-outline-info">Aquí se ve</a>
                 </div>
             </div>
-
         </div>
-
         </div>
         
         <div class="categoria" id="contacto"><h2>Contacto</h2></div>
 
-        <form id="miFormulario" class="form-row borde d-flex flex-wrap justify-content-around">
-            <div class="col-sm-5 formulario">
-                <label for="idNombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="idNombre" placeholder="Tu nombre..." required>
-            </div>
-            <div class="col-sm-5 formulario">
-                <label for="idApellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="idApellido" placeholder="Tu apellido..." required>
-            </div>
-            <div class="col-sm-5 formulario">
-                <label for="idCorreo" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="idCorreo" placeholder="Tu email.... " required>
-            </div>
-            <div class="col-sm-5 formulario">
-                <label for="idTelefono" class="form-label">Telefono</label>
-                <input type="text" class="form-control" id="idTelefono" placeholder="Tu Telefono..." required>             
-            </div>
-            <div class="col-sm-5 formulario">
-                <label for="idConsulta" class="form-label">¿Qué desea consulta?</label><br>
-                <textarea id="idConsulta" name="idConsulta" placeholder="Escribe aquí.." style="width: 100%;height:150px"></textarea>
-            </div>
-            <div class="col-sm-5 formulario">
-            </div>
-            <div class="col-sm-5 formulario">
+        <form action="" method="post" id="miFormulario" class="form-row borde">
 
-            </div>
-            <div class="col-sm-5 formulario d-flex justify-content-end">
-                <input type="submit" value="¡Enviar!" class="btn btn-outline-info">
+            <div class="row">
+                <div class="col-sm-6 formulario">
+                    <label for="idNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="idNombre" placeholder="Tu nombre..." required>
+                </div>
+                <div class="col-sm-6 formulario">
+                    <label for="idApellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="idApellido" placeholder="Tu apellido..." required>
+                </div>
             </div>
 
-            
+            <div class="row">
+                <div class="col-sm-6 formulario">
+                    <label for="idCorreo" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="idCorreo" placeholder="Tu email.... " required>
+                </div>
+                <div class="col-sm-6 formulario">
+                    <label for="idTelefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="idTelefono" pattern="\+56\d{9}" placeholder="+56123456789" required>             
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-sm-6 formulario">
+                    <label for="idConsulta" class="form-label">¿Qué desea consulta?</label><br>
+                    <textarea id="idConsulta" name="idConsulta" placeholder="Escribe aquí.." style="width: 100%;height:150px"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 formulario">
+                    <input type="submit" value="¡Enviar!" class="btn btn-outline-info btnEnviar">
+                </div>
+            </div>
 
         </form>
 
-        </p>
     </div>
 
-    <footer></footer>
+    <footer>Esta página fue diseñada por xxxx. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique ratione explicabo ullam dolores totam officiis non aut doloremque enim. Nulla officia odio dolores quidem molestiae deserunt rerum esse officiis?</footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>

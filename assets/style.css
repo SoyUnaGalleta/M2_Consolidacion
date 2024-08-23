@@ -6,13 +6,25 @@ body {
 h2 {
     color: #eb968d;
     font-size: 40px;
-    margin: 30px 0px;
+    margin: 40px 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+footer {
+    background-color: #fff;
+    padding: 1%;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: justify;
+    letter-spacing: 1px;
 }
 
 .borde {
     text-align: justify;
-    border: 3px solid #eb968d;
-    margin: 1%;
+    border-left: 6px solid #eb968d;
     padding: 2%;
 }
 
@@ -51,4 +63,29 @@ h2 {
 
 .formulario {
     margin-top: 1%;
+}
+
+.btnEnviar {
+    float: right;
+}
+
+.dato {
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #eb968d;
+    margin-bottom:5px;
+    padding: 1%;
+}
+
+.informacion {
+    background-color: #F0f0f0;
+    padding: 1%;
+    margin-bottom:5px;
+    text-align: center;
+}
+
+#sinMarginTop {
+    margin-top: 0px;
 }

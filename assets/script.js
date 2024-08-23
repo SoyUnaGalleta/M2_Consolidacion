@@ -6,6 +6,7 @@ function cambiarColor () {
     var borde = document.getElementsByClassName('borde');
     var tituloCard = document.getElementsByClassName('card-title');
     var bottonColores = document.getElementById('color');
+    var fondoDato = document.getElementsByClassName('dato');
     
 
     for (var i = 0; i < titulo.length; i++) {
@@ -18,15 +19,21 @@ function cambiarColor () {
     };
 
     for (var i = 0; i < borde.length; i++) {
-        var bordeColor = `3px solid ${colores[color]}`;
-        borde[i].style.border = bordeColor;
+        var bordeColor = `6px solid ${colores[color]}`;
+        borde[i].style.borderLeft = bordeColor;
     };
+
+    for (var i = 0; i < fondoDato.length; i++) {
+        fondoDato[i].style.backgroundColor= colores[color];
+    };
+
 
     if (color < colores.length-1) {
         color = color + 1;
     } else {
         color = 0;
     }
+    
 }
 
 function agregarColor () {
